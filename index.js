@@ -43,6 +43,7 @@
 // ------------------------------------------------
 // type NaN => Not a Number
 // alert(Number("Armin Abdi"))
+// alert(typeof NaN) //typeof NaN => Number 
 
 // ------------------------------------------------
 // Data type conversion
@@ -73,4 +74,19 @@
 // alert(num1%num2)
 
 // ------------------------------------------------
+//connect
+//We connect two texts with a +
+// let firstName = "Armin";
+// let lastName = "Abdi";
+// let fullName = firstName + " " + lastName;
+// alert(fullName);
 
+// let firstName2 = "Armin";
+// let lastName2 = "Abdi";
+// let fullName2 = firstName2 + "\n " + lastName2;
+// alert(fullName2);
+
+// alert("armin 'abdi'")
+// alert("armin \"abdi\"")
+
+// ------------------------------------------------
