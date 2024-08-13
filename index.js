@@ -56,7 +56,7 @@
 // alert(typeof string)
 
 // ------------------------------------------------
-// Mathematical operations of addition, subtraction, multiplication and...
+// Mathematical operations of addition, subtraction, multiplication and ...
 // let num1=2
 // let num2=2
 
@@ -90,7 +90,10 @@
 // let fullName2 = firstName2 + "\n " + lastName2;
 // alert(fullName2);
 
+// ------------------------------------------------
+// Creating double quotation or single quotation in the output text
 // alert("armin 'abdi'")
+
 // alert("armin \"abdi\"")
 
 // ------------------------------------------------
@@ -126,7 +129,7 @@
 // This is also a type of condition that stores the answer in a variable. It compares two values. If it is true, it stores the first item after the knowledge of the question in the variable, and if it is false, it stores the false in the variable.
 // let age=12
 // let accessAllowed = (age > 18) ? true : false;
-// alert(accessAllowed)
+// alert(accessAllowed) // false
 
 // ------------------------------------------------
 // workout
@@ -169,7 +172,7 @@
 // let result = inputNumber ** inputNumber2;
 
 // alert(result);
-
+ 
 // ------------------------------------------------
 // workout
 // let userBirthDate = Number(prompt("enter your Birth Date : ", 2002));
@@ -295,3 +298,26 @@
 //     default:
 //         alert("Level F")
 // }
+
+// ------------------------------------------------
+let userRating = Number(prompt("enter yor Rating : "));
+let userGender = String(prompt("enter yor Gender (m,f) : "));
+
+switch(userRating,userGender){
+    case 18 && "m":
+    case 19 && "m":
+    case 20 && "m":
+        alert("Level A")
+        break
+    case 15:
+    case 16:
+    case 17:
+        alert("Level B")
+        break
+    case 12:
+    case 13:
+    case 14:
+        alert("Level C")
+    default:
+        alert("Level F")
+}
