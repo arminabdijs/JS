@@ -300,24 +300,3 @@
 // }
 
 // ------------------------------------------------
-let userRating = Number(prompt("enter yor Rating : "));
-let userGender = String(prompt("enter yor Gender (m,f) : "));
-
-switch(userRating,userGender){
-    case 18 && "m":
-    case 19 && "m":
-    case 20 && "m":
-        alert("Level A")
-        break
-    case 15:
-    case 16:
-    case 17:
-        alert("Level B")
-        break
-    case 12:
-    case 13:
-    case 14:
-        alert("Level C")
-    default:
-        alert("Level F")
-}
