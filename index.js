@@ -172,7 +172,7 @@
 // let result = inputNumber ** inputNumber2;
 
 // alert(result);
- 
+
 // ------------------------------------------------
 // workout
 // let userBirthDate = Number(prompt("enter your Birth Date : ", 2002));
@@ -300,3 +300,16 @@
 // }
 
 // ------------------------------------------------
+// Function
+// The following function adds two numbers and returns the result
+function showValue() {
+  let num1 = 2;
+  let num2 = 8;
+  let resultNumber = num1 + num2;
+  alert(`Result : ${resultNumber}`);
+}
+
+showValue()
+showValue()
+
+
