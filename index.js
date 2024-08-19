@@ -300,16 +300,29 @@
 // }
 
 // ------------------------------------------------
-// Function
+// Function Declaration
 // The following function adds two numbers and returns the result
-function showValue() {
-  let num1 = 2;
-  let num2 = 8;
-  let resultNumber = num1 + num2;
-  alert(`Result : ${resultNumber}`);
-}
+// function showValue() {
+//   let num1 = 2;
+//   let num2 = 8;
+//   let resultNumber = num1 + num2;
+//   alert(`Result : ${resultNumber}`);
+// }
 
-showValue()
-showValue()
+// showValue()
+// showValue()
 
+// function min(a, b) {
+//   if (a < b) {
+//     return confirm(a);
+//   } else {
+//     return confirm(b);
+//   }
+// }
 
+// min(2, 5);
+// min(3, -1);
+// min(1, 1);
+
+// ------------------------------------------------
+// Function Expression
