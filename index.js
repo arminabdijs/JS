@@ -9,10 +9,10 @@
 
 // ------------------------------------------------
 // typeof will return the type of my variable
-// var c = 13;
+// let c = 13;
 // let a = "13";
-// const b = true;
-// var g = 13n;
+// let b = true;
+// let g = 13n;
 
 // alert(typeof c); //type number
 // alert(typeof a); //type string
@@ -21,24 +21,24 @@
 
 // ------------------------------------------------
 // With this method, we can get input from the user
-// const your_Name=prompt("enter your Name :")
+// const your_Name=prompt("enter your Name : ")
 // alert(your_Name)
 
-// const your_Age=prompt("enter your Age :")
+// const your_Age=prompt("enter your Age : ")
 // const result=Number(your_Age)
 // alert(result)
 
-// const your_Age=prompt("enter your Age :")
+// const your_Age=prompt("enter your Age : ")
 // const result=+your_Age
 // alert(result)
 
-// const your_Age2=Number(prompt("enter your Age"))
+// const your_Age2=Number(prompt("enter your Age : "))
 // alert(your_Age2)
 
-// const your_Name2=prompt("enter your Name :","Armin Abdi")
+// const your_Name2=prompt("enter your Name : ","Armin Abdi")
 // alert(your_Name)
 
-// alert(Number(prompt("enter your Age")))
+// alert(Number(prompt("enter your Age : ")))
 
 // ------------------------------------------------
 // type NaN => Not a Number
@@ -301,6 +301,15 @@
 
 // ------------------------------------------------
 // Function Declaration
+// This function will print a greeting
+// function sayHi() {
+//     alert( "سلام" );
+//   }
+
+// sayHi()
+
+// ------------------------------------------------
+// workout
 // The following function adds two numbers and returns the result
 // function showValue() {
 //   let num1 = 2;
@@ -324,5 +333,24 @@
 // min(3, -1);
 // min(1, 1);
 
+// function ask(question, ok, no) {
+//   if (confirm(question)) ok();
+//   else no();
+// }
+// function showOk() {
+//   alert("You agreed");
+// }
+// function showCancel(params) {
+//   alert("You have canceled the run");
+// }
+
+// ask("do you agree ? ", showOk, showCancel);
+
 // ------------------------------------------------
 // Function Expression
+let sayHi = function () {
+  alert("Hello");
+};
+
+sayHi();
+
