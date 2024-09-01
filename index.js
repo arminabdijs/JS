@@ -303,10 +303,10 @@
 // Function Declaration
 // This function will print a greeting
 // function sayHi() {
-//     alert( "سلام" );
-//   }
+//     alert("Hello");
+// }
 
-// sayHi()
+// sayHi();
 
 // ------------------------------------------------
 // workout
@@ -346,11 +346,21 @@
 
 // ask("do you agree ? ", showOk, showCancel);
 
+// function showCount(count) {
+//   alert(count ?? "unknown");
+// }
+
+// showCount(0); // 0
+// showCount(null); // unknown
+// showCount(); // unknown
+
 // ------------------------------------------------
 // Function Expression
-let sayHi = function () {
-  alert("Hello");
-};
+// let sayHi = function () {
+//     alert("Hello");
+// };
 
-sayHi();
+// sayHi();
 
+// ------------------------------------------------
+// workout\
