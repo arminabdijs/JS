@@ -1,4 +1,4 @@
-//This will open a window and print a hello world message
+// This will open a window and print a hello world message
 // alert("hello world");
 
 // ------------------------------------------------
@@ -21,65 +21,65 @@
 
 // ------------------------------------------------
 // With this method, we can get input from the user
-// const your_Name=prompt("enter your Name : ")
-// alert(your_Name)
+// const your_Name = prompt("enter your Name : ");
+// alert(your_Name);
 
-// const your_Age=prompt("enter your Age : ")
-// const result=Number(your_Age)
-// alert(result)
+// const your_Age = prompt("enter your Age : ");
+// const result = Number(your_Age);
+// alert(result);
 
-// const your_Age=prompt("enter your Age : ")
-// const result=+your_Age
-// alert(result)
+// const your_Age = prompt("enter your Age : ");
+// const result = +your_Age;
+// alert(result);
 
-// const your_Age2=Number(prompt("enter your Age : "))
-// alert(your_Age2)
+// const your_Age2 = Number(prompt("enter your Age : "));
+// alert(your_Age2);
 
-// const your_Name2=prompt("enter your Name : ","Armin Abdi")
-// alert(your_Name)
+// const your_Name2 = prompt("enter your Name : ", "Armin Abdi");
+// alert(your_Name);
 
-// alert(Number(prompt("enter your Age : ")))
+// alert(Number(prompt("enter your Age : ")));
 
 // ------------------------------------------------
 // type NaN => Not a Number
-// alert(Number("Armin Abdi"))
+// alert(Number("Armin Abdi"));
 
-// alert(typeof NaN) //typeof NaN => Number
+// alert(typeof NaN); //typeof NaN => Number
 
 // const name = "Armin";
-// alert(isNaN(name)) //output true
+// alert(isNaN(name)); //output true
 
 // ------------------------------------------------
 // Data type conversion
 // let boolean = true;
-// let string = String(boolean)
-// alert(typeof string)
+// let string = String(boolean);
+// alert(typeof string);
 
 // ------------------------------------------------
 // Mathematical operations of addition, subtraction, multiplication and ...
-// let num1=2
-// let num2=2
+// let num1 = 2;
+// let num2 = 2;
 
-// alert(num1+num2)
-// alert(num1-num2)
-// alert(num1*num2)
-// alert(num1**num2)
-// alert(num1%num2)
+// alert(num1 + num2);
+// alert(num1 - num2);
+// alert(num1 * num2);
+// alert(num1 ** num2);
+// alert(num1 % num2);
 
 // ------------------------------------------------
 // workout
-// let num1=Number(prompt("enter your Number"))
-// let num2=Number(prompt("enter your Number"))
+// let num1 = Number(prompt("enter your Number"));
+// let num2 = Number(prompt("enter your Number"));
 
-// alert(num1+num2)
-// alert(num1-num2)
-// alert(num1*num2)
-// alert(num1**num2)
-// alert(num1%num2)
+// alert(num1 + num2);
+// alert(num1 - num2);
+// alert(num1 * num2);
+// alert(num1 ** num2);
+// alert(num1 % num2);
 
 // ------------------------------------------------
-//connect
-//We connect two texts with a +
+// connect
+// We connect two texts with a +
 // let firstName = "Armin";
 // let lastName = "Abdi";
 // let fullName = firstName + " " + lastName;
@@ -92,9 +92,9 @@
 
 // ------------------------------------------------
 // Creating double quotation or single quotation in the output text
-// alert("armin 'abdi'")
+// alert("armin 'abdi'");
 
-// alert("armin \"abdi\"")
+// alert('armin "abdi"');
 
 // ------------------------------------------------
 // Comparative operators
@@ -127,9 +127,9 @@
 // }
 
 // This is also a type of condition that stores the answer in a variable. It compares two values. If it is true, it stores the first item after the knowledge of the question in the variable, and if it is false, it stores the false in the variable.
-// let age=12
-// let accessAllowed = (age > 18) ? true : false;
-// alert(accessAllowed) // false
+// let age = 12;
+// let accessAllowed = age > 18 ? true : false;
+// alert(accessAllowed); // false
 
 // ------------------------------------------------
 // workout
@@ -149,8 +149,8 @@
 // let inputNumber2 = Number(prompt("enter Your Number : "));
 // let inputNumber3 = Number(prompt("enter Your Number : "));
 
-// const result = (inputNumber + inputNumber2 + inputNumber3) /3;
-// alert(`The average of these three numbers is : ${result}`)
+// const result = (inputNumber + inputNumber2 + inputNumber3) / 3;
+// alert(`The average of these three numbers is : ${result}`);
 
 // ------------------------------------------------
 // workout
@@ -213,8 +213,8 @@
 //   alert("The multiplier is 10 or 11");
 // } else if (num2 * num3 === 13 || num2 * num3 === 15) {
 //   alert("The multiplier is 13 or 15");
-// }else if (num2 * num3 === 14 || num2 * num3 === 12) {
-//     alert("The multiplier is 14 or 12")
+// } else if (num2 * num3 === 14 || num2 * num3 === 12) {
+//   alert("The multiplier is 14 or 12");
 // }
 
 // AND => &&
@@ -280,23 +280,24 @@
 // workout
 // let userRating = Number(prompt("enter yor Rating : "));
 
-// switch(userRating){
-//     case 18:
-//     case 19:
-//     case 20:
-//         alert("Level A")
-//         break
-//     case 15:
-//     case 16:
-//     case 17:
-//         alert("Level B")
-//         break
-//     case 12:
-//     case 13:
-//     case 14:
-//         alert("Level C")
-//     default:
-//         alert("Level F")
+// switch (userRating) {
+//   case 18:
+//   case 19:
+//   case 20:
+//     alert("Level A");
+//     break;
+//   case 15:
+//   case 16:
+//   case 17:
+//     alert("Level B");
+//     break;
+//   case 12:
+//   case 13:
+//   case 14:
+//     alert("Level C");
+//     break;
+//   default:
+//     alert("Level F");
 // }
 
 // ------------------------------------------------
@@ -321,6 +322,8 @@
 // showValue()
 // showValue()
 
+// ------------------------------------------------
+// workout
 // function min(a, b) {
 //   if (a < b) {
 //     return confirm(a);
@@ -333,6 +336,8 @@
 // min(3, -1);
 // min(1, 1);
 
+// ------------------------------------------------
+// workout
 // function ask(question, ok, no) {
 //   if (confirm(question)) ok();
 //   else no();
@@ -363,4 +368,4 @@
 // sayHi();
 
 // ------------------------------------------------
-// workout\
+// workout
