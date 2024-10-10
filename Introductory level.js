@@ -489,6 +489,9 @@
 // let text = "I love JavaScript";
 // console.log(text.includes("Java"));
 
+// let text = "I love JavaScript";
+// console.log(text.includes("Java",8));
+
 //It goes into the text, separates it from the start index to the end index and returns it to us
 // let text = "I love JavaScript";
 // console.log(text.slice(-10, 17));
@@ -864,7 +867,7 @@
 // console.log(arr);
 
 // let arr = [1, 2, 5];
-// let copyArr = arr.slice(0, 1 + 1); //This method copies from the start index to the end index into another variable
+// let copyArr = arr.slice(0, 1); //This method copies from the start index to the end index into another variable
 // let copyArr2 = arr.slice(-2);
 // console.log(copyArr);
 // console.log(copyArr2);
@@ -909,6 +912,60 @@
 // });
 // a[2]();
 
+// let ages = [12, 15, 19, 17];
+// let result = ages.every((age) => {
+//   //It checks all the items to see if the desired condition is correct or not
+//   return age < 18;
+// });
+// console.log(result);
+
+// let users = ["amir", "ali", "armin"];
+// let isUserIndex = users.findIndex((user) => {
+//   //It searches for an item and returns its index
+//   return user === "armin";
+// });
+// console.log(isUserIndex);
+
+// let scores = [2, 9, 6, 4, 8, 10];
+// let scorePower = scores.map((score) => {
+//   return score ** 2;
+// });
+// console.log(scorePower);
+
+// let ages = [12, 15, 19, 17];
+// let result = ages.filter((age) => {
+//   //This will separate those items that are equal to that condition
+//   return age < 18;
+// });
+// console.log(result);
+
+// let usernames = ["Ali", "Amin", "Roz", "Babak"];
+// let filterUserName = usernames.filter((userName) => {
+//   return userName.length>3;
+// });
+// console.log(filterUserName);
+
+// let ages = [12, 19, 15, 19, 17,19];
+
+// // console.log(Array.isArray(ages)); //This specifies whether this is an array or not
+
+// console.log(ages.indexOf(19));
+// console.log(ages.lastIndexOf(19)); //This table is searched and the last item according to this is found and its index is retrieved
+// console.log(ages.lastIndexOf(19,3)); //This table is searched and the last item according to this is found and its index is retrieved
+
+// ------------------------------------------------
+// workout
+// let enterWord=prompt("enter the word : ")
+
+// let reverseWord=enterWord.split("").reverse().join("")
+
+// if(enterWord===reverseWord){
+//     console.log("ok");
+// }else{
+//     console.log("not ok");
+
+// }
+
 // ------------------------------------------------
 // workout
 // let i = 0;
@@ -948,3 +1005,549 @@
 
 // console.log(userNumbers)
 // console.log("Average: ", sum / userNumbers.length)
+
+// ------------------------------------------------
+//Object
+// let newObject = new Object();
+// let Object = {};
+
+// let user = {
+//   //In Objects, we can immediately put properties as pairs of "key: value" (key: value) inside {...}
+//   name: "Armin",
+//   Age: 22,
+// };
+
+// console.log(user.name); //Attribute values ​​are accessed using the dot
+
+// user.isAdmin = true; //We can add an item by using the name of the item and a dot and key that we want to add and equal to the value of that key.
+// console.log(user);
+
+// delete user.isAdmin; //To delete an attribute, we use the delete operator
+// console.log(user);
+
+// let newUser = {
+//   name: "Armin",
+//   age: 30,
+//   "likes birds": true, // Multi-word attribute names must be enclosed in quotation marks
+// };
+
+// newUser.likes birds = true //For multi-word attributes, dot access is not possible
+
+// newUser["likes birds"] = false; //There is an alternative method called "brackets" that works with any string
+// console.log(newUser);
+// delete newUser["likes birds"];
+// console.log(newUser);
+
+// let key=prompt("What do you want to know about the user?","name")
+// alert(newUser[key])
+
+// let fruit = prompt("Which fruit are you going to buy?", "apple");
+
+// let bag = {
+//   [fruit]: 5,
+// };
+
+// alert( bag[fruit] );
+// alert( bag.apple );
+
+// function makeUser(name, age) {
+//   return {
+//    // name: name,
+//     name,
+//    // age: age,
+//    age,
+//   };
+// }
+// let user = makeUser(
+//   prompt("Please enter your name?", "Armin"),
+//   Number(prompt("Please enter your age?", 22))
+// );
+// alert(user.name);
+
+// console.log(newUser.name === undefined);//output => false
+// console.log("name" in newUser);// output => true
+
+// for (let key in newUser) {
+//   console.log(key);
+//   console.log(newUser[key]);
+//   console.log("------------");
+// }
+
+// let codes2 = {
+//     "49": "Germany",
+//     "41": "Switzerland",
+//     "44": "Great Britain",
+//     // ..,
+//     "1": "USA"
+//   };
+//   for (let code in codes2) {
+//     alert(code); // 1, 41, 44, 49
+//   }
+
+// let codes = {
+//   "+49": "Germany",
+//   "+41": "Switzerland",
+//   "+44": "Great Britain",
+//   // ..,
+//   "+1": "USA",
+// };
+// for (const key in codes) {
+//     console.log(+key);
+// }
+
+// let Admin = { name: "mohammad", age: 22, isAdmin: true };
+// let newObject = {};
+// Object.assign(newObject, newUser, Admin); //This method copies several items inside the first item
+// let clone = Object.assign({}, newUser, Admin);
+// console.log(newObject);
+// console.log(
+//   "-----------------------------------------------------------------"
+// );
+// console.log(clone);
+
+// let user = {
+//   name: "Armin",
+//   sizes: {
+//     width: 50,
+//     height: 180,
+//   },
+// };
+// // console.log(user.sizes.height);
+
+// let clone = structuredClone(user); //copy
+// let clone2 = Object.assign({}, user);
+// clone.sizes.height = 178;
+// console.log(clone);
+// clone2.sizes.height = 40;
+// console.log(clone2);
+// console.log(user);
+
+// console.log(clone === clone2);
+
+// let Users = [
+//   { id: 1, name: "armin", family: "abdi", age: 21, email: "email@gmail.com" },
+//   { id: 2, name: "mohammd", family: "abdi", age: 21, email: "email@gmail.com" },
+//   { id: 3, name: "ali", family: "abdi", age: 21, email: "email@gmail.com" },
+// ];
+// let isInUsers = Users.some((user) => {
+//   //This is like includes, it returns a Boolean, with the difference that it accepts these arrays and the rest, and its written syntax is like forEach.
+//   return user.name === "ali";
+// });
+// console.log(isInUsers);
+
+// ------------------------------------------------
+// workout
+// let Users = [
+//   { id: 1, name: "armin", family: "abdi", age: 21, email: "email@gmail.com" },
+//   { id: 2, name: "mohammd", family: "abdi", age: 21, email: "email@gmail.com" },
+//   { id: 3, name: "ali", family: "abdi", age: 21, email: "email@gmail.com" },
+// ];
+
+// let userName = prompt("enter your Name");
+// let userFamily = prompt("enter your Family");
+// let userAge = Number(prompt("enter your Age"));
+// let userEmail = prompt("enter your Email");
+
+// if (userName.length < 3 || userAge.length > 10) {
+//   console.log(
+//     "The name must have at least 3 characters and a maximum of 10 characters"
+//   );
+// } else if (userFamily.length < 3 || userFamily.length > 15) {
+//   console.log(
+//     "family must have at least 3 characters and maximum 15 characters"
+//   );
+// } else if (userAge.length > 3 || isNaN(userAge)) {
+//   console.log("Age must be a number and maximum 3 digits");
+// } else {
+//   let newUser = Object.assign({}, Users[2]);
+
+//   newUser.name = userName;
+//   newUser.family = userFamily;
+//   newUser.age = userAge;
+//   newUser.email = userEmail;
+//   newUser.id = newUser.id + 1;
+
+//   Users.push(newUser);
+
+//   console.log(Users);
+// }
+
+// ------------------------------------------------
+// workout
+// let Users = [
+//   { id: 1, name: "armin", family: "abdi", age: 21, email: "email@gmail.com" },
+//   { id: 2, name: "mohammd", family: "abdi", age: 21, email: "email@gmail.com" },
+//   { id: 3, name: "ali", family: "abdi", age: 21, email: "email@gmail.com" },
+// ];
+
+// Users.forEach((user) =>
+//   console.log(`Name : ${user.name} || Family : ${user.family}`)
+// );
+
+// ------------------------------------------------
+// workout
+// let allProducts = [
+//   { id: 1, name: "Laptop", price: 17000000 },
+//   { id: 2, name: "Phone", price: 7000000 },
+//   { id: 3, name: "Pen", price: 12000 },
+//   { id: 4, name: "Pencil", price: 9000 },
+//   { id: 5, name: "Eraser", price: 6000 },
+//   { id: 6, name: "Milk", price: 35000 },
+// ];
+
+// let userBasket = [
+//   { id: 1, name: "pen", price: 12000 },
+//   { id: 2, name: "pencil", price: 9000 },
+// ];
+
+// let userProduct = prompt("Enter The Name Of Product: "); // 'Phone'
+
+// let newProduct;
+
+// let isInShop = allProducts.some(function (product) {
+//   if (product.name === userProduct) {
+//     newProduct = product;
+//     return true;
+//   }
+// });
+
+// if (isInShop === true) {
+//   userBasket.push(newProduct);
+
+//   let sum = 0;
+
+//   userBasket.forEach(function (product) {
+//     sum += product.price;
+//   });
+//   console.log(userBasket);
+//   alert("Total Price: " + sum);
+// } else {
+//   console.log("not available");
+// }
+
+// ------------------------------------------------
+// workout
+// let allProducts = [
+//   { id: 1, name: "Laptop", price: 17000000 },
+//   { id: 2, name: "Phone", price: 7000000 },
+//   { id: 3, name: "Pen", price: 12000 },
+//   { id: 4, name: "Pencil", price: 9000 },
+//   { id: 5, name: "Eraser", price: 6000 },
+//   { id: 6, name: "Milk", price: 35000 },
+// ];
+
+// let userBasket = [
+//   { id: 1, name: "pen", price: 12000 },
+//   { id: 2, name: "pencil", price: 9000 },
+// ];
+
+// let userRequest = Number(
+//   prompt("1. Add Products \n2. Remove Products", "1 OR 2")
+// );
+
+// let userProductName = prompt("enter your Name : ");
+// switch (userRequest) {
+//   case 1:
+//     // alert("Add");
+//     let userRequestShop;
+//     let isInShop = allProducts.some((user) => {
+//       if (user.name === userProductName) {
+//         userRequestShop = user;
+//         return true;
+//       }
+//     });
+
+//     if (isInShop === true) {
+//       userBasket.push(userRequestShop);
+//       console.log(userBasket);
+//     } else {
+//       console.log("This product is not available in our store");
+//     }
+//     break;
+//   case 2:
+//     let findIndexUserRequest = userBasket.findIndex((userName) => {
+//       return userName.name === userProductName;
+//     });
+//     if (findIndexUserRequest === -1) {
+//       alert("not item in shop");
+//     } else {
+//       userBasket.splice(findIndexUserRequest, 1);
+//       alert("Removed");
+//       console.log(userBasket);
+//     }
+//     break;
+//   default:
+//     alert("Please enter the correct option");
+//     break;
+// }
+
+// ------------------------------------------------
+// workout
+// let userBasket = [
+//   { id: 1, name: "pen", price: 12000 },
+//   { id: 2, name: "pencil", price: 9000 },
+//   { id: 3, name: "Eraser", price: 6000 },
+//   { id: 4, name: "Milk", price: 35000 },
+//   { id: 4, name: "Car", price: 100000 },
+// ];
+
+// let userProductUp100 = [];
+// let userProductDn100 = [];
+
+// let sumPriceProductDn100 = 0;
+// let sumPriceProductUp100 = 0;
+
+// userBasket.filter((priceProduct) => {
+//   if (priceProduct.price > 100000) {
+//     return userProductUp100.push(priceProduct);
+//   } else {
+//     return userProductDn100.push(priceProduct);
+//   }
+// });
+
+// userProductDn100.forEach((price) => {
+//   sumPriceProductDn100 += price.price;
+// });
+
+// userProductUp100.forEach((price) => {
+//   sumPriceProductUp100 += price.price;
+// });
+
+// sumPriceDn100 = sumPriceProductDn100 + userProductDn100.length * 1000;
+
+// sumPriceAllProducts = sumPriceDn100 + sumPriceProductUp100;
+
+// console.log(userBasket);
+
+// console.log("Shippingcost : " + userProductDn100.length * 1000);
+
+// console.log("total basket : " + sumPriceAllProducts);
+
+// ------------------------------------------------
+// workout
+// let userBasket = [
+// 	{id: 1, name: 'laptop', price: 5000000},
+// 	{id: 2, name: 'phone', price: 3000000},
+// 	{id: 3, name: 'milk', price: 35000},
+// 	{id: 4, name: 'water', price: 6000},
+// 	{id: 5, name: 'coolpad', price: 400000},
+// 	{id: 6, name: 'pencil', price: 9000},
+// ]
+
+// let filteredProducts = userBasket.filter(function (product) {
+// 	return product.price < 100000
+// })
+
+// let postCost = filteredProducts.length * 1000
+
+// let sum = 0
+
+// userBasket.forEach(function(product) {
+// 	sum = sum + product.price
+// })
+
+// let totalPrice = sum + postCost
+
+// console.log("Total Price: ", totalPrice)
+
+// ------------------------------------------------
+// workout
+// let groupUsers = [
+//   { id: 1, name: "Ali", age: 19 },
+//   { id: 2, name: "Amin", age: 22 },
+//   { id: 3, name: "Amir", age: 21 },
+//   { id: 4, name: "Akbar", age: 29 },
+// ];
+
+// let isAll = groupUsers.every(function (user) {
+//   return user.age > 18;
+// });
+
+// if (isAll === true) {
+//   console.log("You can start your conference call");
+// } else {
+//   console.log("You are not allowed to make a conference call");
+// }
+
+// ------------------------------------------------
+// workout
+// let todoList = [
+//   { id: 1, name: "Math", Description: "From 1 to 2:30", status: false },
+//   {
+//     id: 2,
+//     name: "Belles Lettres",
+//     Description: "From 3 to 4:30",
+//     status: false,
+//   },
+//   { id: 3, name: "ُSport", Description: "From 6 to 9:30", status: false },
+// ];
+
+// let todoUser = Number(
+//   prompt(
+//     "1. Add todo \n2. Todo removal\n3. To do (change status)",
+//     "1 or 2 or 3"
+//   )
+// );
+
+// let newTodo = Object.assign({}, todoList[3]);
+
+// if (todoUser === 1) {
+//   newTodo.id = todoList.length + 1;
+//   newTodo.name = prompt("enter name ToDo : ");
+//   newTodo.Description = prompt("enter your Description : ");
+//   newTodo.status = false;
+
+//   todoList.push(newTodo);
+//   console.log(todoList);
+// } else if (todoUser === 2) {
+//   let removeTodo = prompt(
+//     "enter name todo for remover in liset ToDo : ",
+//     "Math"
+//   );
+//   let filterName = todoList.filter((todo) => {
+//     if (todo.name === removeTodo) {
+//       return todoList.lastIndexOf(todo);
+//     }
+//   });
+
+//   todoList.splice(filterName, 1);
+
+//   console.log(todoList);
+// } else if (todoUser === 3) {
+//   let changeStatus = prompt(
+//     "enter name todo for remover in liset ToDo : ",
+//     "Math"
+//   );
+//   todoList.forEach((todo) => {
+//     if (todo.name === changeStatus) {
+//       todo.status = true;
+//     }
+//   });
+
+//   console.log(todoList);
+// }
+
+// ------------------------------------------------
+// workout
+// let taskList = [
+//   { id: 1, name: "armin", task: ["ui/ux"] },
+//   { id: 2, name: "amir", task: ["frunEnd"] },
+//   { id: 3, name: "ُmohammad", task: ["Backend"] },
+// ];
+
+// let nameKarmand=prompt("Enter the employee's name : ")
+// let newTaskKarmand;
+
+// let findName=taskList.filter((Karmand)=>{
+//     if (Karmand.name===nameKarmand) {
+//         nameKarmand=prompt("Enter the employee's task : ")
+//         Karmand.task.push(nameKarmand)
+//         console.log(taskList);
+//     }else{
+//         console.log("You do not have such an employee");
+
+//     }
+// })
+
+// ------------------------------------------------
+// workout
+// let citiesToTravel = {
+//   Tehran: [
+//     " Nasirshahr ",
+//     " Andisheh ",
+//     " Shamshak ",
+//     " Pakdasht ",
+//     " Baghershahr ",
+//   ],
+//   Kermanshah: [
+//     " Javanrud ",
+//     " Ravansar ",
+//     " Paveh ",
+//     " Kangavar ",
+//     " Sarpel Zehab ",
+//   ],
+//   Kardastan: [
+//     " Kamyaran ",
+//     " Kani Sur ",
+//     " Kani Dinar ",
+//     " Saqez ",
+//     " Dehglan ",
+//   ],
+// };
+
+// let enterProvince = prompt("Enter your desired province : ", "Kermanshah");
+
+// let desiredProvince = citiesToTravel[enterProvince];
+
+// desiredProvince.forEach((Citie) => {
+//   console.log(Citie);
+// });
+
+// ------------------------------------------------
+// workout
+// let allQuestions = [
+//   { id: 1, title: "2 + 2", answer: "4" },
+//   { id: 2, title: "2 * 4", answer: "8" },
+//   { id: 3, title: "7 ** 2", answer: "49" },
+//   { id: 4, title: "12 / 4", answer: "3" },
+//   { id: 5, title: "100 / 25", answer: "4" },
+//   { id: 6, title: "100 * 2", answer: "200" },
+//   { id: 7, title: "Cpaital Of Iran", answer: "tehran" },
+// ];
+
+// let score = 0;
+
+// let mainAnswer = "";
+// allQuestions.forEach((question) => {
+//   mainAnswer = prompt(question.title + " ? ");
+//   if (question.answer === mainAnswer) {
+//     score++;
+//   }
+// });
+
+// console.log("Your Final Score : " + score);
+
+// ------------------------------------------------
+// workout
+// var num1 = +prompt('Enter The First Number: ')
+// var num2 = +prompt('Enter The Second Number: ')
+
+// var userOperator = prompt('Enter The Operator: \n 1. + \n 2. - \n 3. * \n 4. / \n 5. **')
+
+// if (userOperator === '1') {
+//     sum(num1, num2)
+// } else if (userOperator === '2') {
+//     tafrig(num1, num2)
+// }
+// else if (userOperator === '3') {
+//     zarb(num1, num2)
+// }
+// else if (userOperator === '4') {
+//     devide(num1, num2)
+// }
+// else if (userOperator === '5') {
+//     power(num1, num2)
+// } else {
+//     alert('عملیات وارد شده معتبر نمی باشد')
+// }
+
+// function sum(num1, num2) {
+//     // return num1 + num2\
+//     alert(num1 + num2)
+// }
+// function tafrig(num1, num2) {
+//     // return num1 - num2\
+//     alert(num1 - num2)
+// }
+// function devide(num1, num2) {
+//     // return num1 / num2\
+//     alert(num1 / num2)
+// }
+// function zarb(num1, num2) {
+//     // return num1 * num2\
+//     alert(num1 * num2)
+// }
+// function power(num1, num2) {
+//     // return num1 ** num2\
+//     alert(num1 ** num2)
+// }
