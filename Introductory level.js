@@ -14,68 +14,68 @@
 // let b = true;
 // let g = 13n;
 
-// alert(typeof c); //type number
-// alert(typeof a); //type string
-// alert(typeof b); //type boolean
-// alert(typeof g); //type bigint
+// console.log(typeof c); //type number
+// console.log(typeof a); //type string
+// console.log(typeof b); //type boolean
+// console.log(typeof g); //type bigint
 
 // ------------------------------------------------
 // With this method, we can get input from the user
 // const your_Name = prompt("enter your Name : ");
-// alert(your_Name);
+// console.log(your_Name);
 
 // const your_Age = prompt("enter your Age : ");
 // const result = Number(your_Age);
-// alert(result);
+// console.log(result);
 
 // const your_Age = prompt("enter your Age : ");
 // const result = +your_Age;
-// alert(result);
+// console.log(result);
 
 // const your_Age2 = Number(prompt("enter your Age : "));
-// alert(your_Age2);
+// console.log(your_Age2);
 
 // const your_Name2 = prompt("enter your Name : ", "Armin Abdi");
-// alert(your_Name);
+// console.log(your_Name);
 
-// alert(Number(prompt("enter your Age : ")));
+// console.log(Number(prompt("enter your Age : ")));
 
 // ------------------------------------------------
 // type NaN => Not a Number
-// alert(Number("Armin Abdi"));
+// console.log(Number("Armin Abdi"));
 
-// alert(typeof NaN); //typeof NaN => Number
+// console.log(typeof NaN); //typeof NaN => Number
 
 // const name = "Armin";
-// alert(isNaN(name)); //output true
+// console.log(isNaN(name)); //output true
 
 // ------------------------------------------------
 // Data type conversion
 // let boolean = true;
 // let string = String(boolean);
-// alert(typeof string);
+// console.log(typeof string);
 
 // ------------------------------------------------
 // Mathematical operations of addition, subtraction, multiplication and ...
 // let num1 = 2;
 // let num2 = 2;
 
-// alert(num1 + num2);
-// alert(num1 - num2);
-// alert(num1 * num2);
-// alert(num1 ** num2);
-// alert(num1 % num2);
+// console.log(num1 + num2);
+// console.log(num1 - num2);
+// console.log(num1 * num2);
+// console.log(num1 ** num2);
+// console.log(num1 % num2);
 
 // ------------------------------------------------
 // workout
 // let num1 = Number(prompt("enter your Number"));
 // let num2 = Number(prompt("enter your Number"));
 
-// alert(num1 + num2);
-// alert(num1 - num2);
-// alert(num1 * num2);
-// alert(num1 ** num2);
-// alert(num1 % num2);
+// console.log(num1 + num2);
+// console.log(num1 - num2);
+// console.log(num1 * num2);
+// console.log(num1 ** num2);
+// console.log(num1 % num2);
 
 // ------------------------------------------------
 // connect
@@ -83,20 +83,20 @@
 // let firstName = "Armin";
 // let lastName = "Abdi";
 // let fullName = firstName + " " + lastName;
-// alert(fullName);
+// console.log(fullName);
 
 // let firstName2 = "Armin";
 // let lastName2 = "Abdi";
 // let fullName2 = firstName2 + "\n " + lastName2;
-// alert(fullName2);
+// console.log(fullName2);
 
 // ------------------------------------------------
 // Creating double quotation or single quotation in the output text
-// alert("armin 'abdi'");
+// console.log("armin 'abdi'");
 
-// alert('armin "abdi"');
+// console.log('armin "abdi"');
 
-// alert("armin\"abdi\"")
+// console.log("armin\"abdi\"")
 
 // ------------------------------------------------
 // Comparative operators
@@ -105,14 +105,14 @@
 // let num3 = 4;
 // let num4 = "12";
 
-// alert(num1 == num3); //false
+// console.log(num1 == num3); //false
 
-// alert(num1 > num3); //true
+// console.log(num1 > num3); //true
 
-// alert(num2 >= num3); //true
+// console.log(num2 >= num3); //true
 
-// alert(num1 == num4); //true
-// alert(num1 === num4); //false
+// console.log(num1 == num4); //true
+// console.log(num1 === num4); //false
 
 // ------------------------------------------------
 // Conditions [if,else if , else]
@@ -121,28 +121,28 @@
 // let num3 = 3;
 
 // if (num2 * num3 === num1) { //scope
-//   alert(num2 * num3);
+//   console.log(num2 * num3);
 // } else if (num2 > num3) {
-//   alert("num2>num3");
+//   console.log("num2>num3");
 // } else {
-//   alert("Oops");
+//   console.log("Oops");
 // }
 
 // This is also a type of "condition operator" that stores the answer in a variable. It compares two values. If it is true, it stores the first item after the knowledge of the question in the variable, and if it is false, it stores the false in the variable.
 // let age = 12;
 // let accessAllowed = age > 18 ? true : false;
-// alert(accessAllowed); // false
+// console.log(accessAllowed); // false
 
 // ------------------------------------------------
 // workout
 // let inputNumber = Number(prompt("enter Your Number : "));
 
 // if (inputNumber % 2 === 0) {
-//   alert("Entered is even");
+//   console.log("Entered is even");
 // } else if (inputNumber % 2 === 1) {
-//   alert("Entered is a odd");
+//   console.log("Entered is a odd");
 // } else {
-//   alert("Please enter a number");
+//   console.log("Please enter a number");
 // }
 
 // ------------------------------------------------
@@ -152,18 +152,18 @@
 // let inputNumber3 = Number(prompt("enter Your Number : "));
 
 // const result = (inputNumber + inputNumber2 + inputNumber3) / 3;
-// alert(`The average of these three numbers is : ${result}`);
+// console.log(`The average of these three numbers is : ${result}`);
 
 // ------------------------------------------------
 // workout
 // let userAge = Number(prompt("enter Your Number : "));
 
 // if (userAge < 18) {
-//   alert("You are not allowed to enter");
+//   console.log("You are not allowed to enter");
 // } else if (userAge >= 18) {
-//   alert("Login to the panel");
+//   console.log("Login to the panel");
 // } else {
-//   alert("Please enter a number");
+//   console.log("Please enter a number");
 // }
 
 // ------------------------------------------------
@@ -173,7 +173,7 @@
 
 // let result = inputNumber ** inputNumber2;
 
-// alert(result);
+// console.log(result);
 
 // ------------------------------------------------
 // workout
@@ -183,13 +183,13 @@
 // let userAge = dateOfTheDay - userBirthDate;
 
 // if (isNaN(userBirthDate)) {
-//   alert("Please enter the date of birth as a number");
+//   console.log("Please enter the date of birth as a number");
 // } else if (isNaN(dateOfTheDay)) {
-//   alert("Please enter the date and number");
+//   console.log("Please enter the date and number");
 // } else if (userAge <= 0) {
-//   alert("The date entered is not correct");
+//   console.log("The date entered is not correct");
 // } else {
-//   alert("your Age is : " + userAge);
+//   console.log("your Age is : " + userAge);
 // }
 
 // ------------------------------------------------
@@ -199,9 +199,9 @@
 // let minuteToHours = minutes / 60;
 
 // if (isNaN(minutes)) {
-//   alert("Please enter a number");
+//   console.log("Please enter a number");
 // } else {
-//   alert(minuteToHours + " Hours");
+//   console.log(minuteToHours + " Hours");
 // }
 
 // ------------------------------------------------
@@ -212,11 +212,11 @@
 // let num3 = 3;
 
 // if (num2 * num3 === 10 || num2 * num3 === 11) {
-//   alert("The multiplier is 10 or 11");
+//   console.log("The multiplier is 10 or 11");
 // } else if (num2 * num3 === 13 || num2 * num3 === 15) {
-//   alert("The multiplier is 13 or 15");
+//   console.log("The multiplier is 13 or 15");
 // } else if (num2 * num3 === 14 || num2 * num3 === 12) {
-//   alert("The multiplier is 14 or 12");
+//   console.log("The multiplier is 14 or 12");
 // }
 
 // AND => &&
@@ -224,21 +224,21 @@
 // let num2 = 3;
 
 // if (num2 === 3 && num1 * num2 === 12) {
-//   alert(
+//   console.log(
 //     "The first number is equal to 3 and the product of the first and second number is equal to 12"
 //   );
 // } else if (num2 === 4 && num1 * num2 === 12) {
-//   alert(
+//   console.log(
 //     "The first number is equal to 4 and the product of the first and second number is equal to 12"
 //   );
 // } else {
-//   alert("None of the conditions are correct");
+//   console.log("None of the conditions are correct");
 // }
 
 // NOT => !
 // let myBool = true;
-// alert("my Bool = " + myBool);
-// alert("Not my Bool = " + !myBool);
+// console.log("my Bool = " + myBool);
+// console.log("Not my Bool = " + !myBool);
 
 // ------------------------------------------------
 // workout
@@ -246,18 +246,18 @@
 // let userGender = String(prompt("enter yor Gender (male , female) : "));
 
 // if (userGender === "female" || userAge < 18) {
-//   alert("Sorry, you are not allowed to use this site");
+//   console.log("Sorry, you are not allowed to use this site");
 // } else if (userGender === "male" || userAge >= 18) {
-//   alert("We welcome you to the panel");
+//   console.log("We welcome you to the panel");
 // } else {
-//   alert("The input items are not entered correctly");
+//   console.log("The input items are not entered correctly");
 // }
 
 // userGender === "female" || userAge < 18
-//   ? alert("Sorry, you are not allowed to use this site")
+//   ? console.log("Sorry, you are not allowed to use this site")
 //   : userGender === "male" || userAge >= 18
-//   ? alert("We welcome you to the panel")
-//   : alert("The input items are not entered correctly");
+//   ? console.log("We welcome you to the panel")
+//   : console.log("The input items are not entered correctly");
 
 // ------------------------------------------------
 // switch
@@ -266,16 +266,16 @@
 
 // switch (a) {
 //   case 3:
-//     alert( 'Too small' );
+//     console.log( 'Too small' );
 //     break;
 //   case 4:
-//     alert("Exactly!");
+//     console.log("Exactly!");
 //     break;
 //   case 5:
-//     alert( 'Too big' );
+//     console.log( 'Too big' );
 //     break;
 //   default:
-//     alert( "I don't know such values" );
+//     console.log( "I don't know such values" );
 // }
 
 // ------------------------------------------------
@@ -286,27 +286,27 @@
 //   case 18:
 //   case 19:
 //   case 20:
-//     alert("Level A");
+//     console.log("Level A");
 //     break;
 //   case 15:
 //   case 16:
 //   case 17:
-//     alert("Level B");
+//     console.log("Level B");
 //     break;
 //   case 12:
 //   case 13:
 //   case 14:
-//     alert("Level C");
+//     console.log("Level C");
 //     break;
 //   default:
-//     alert("Level F");
+//     console.log("Level F");
 // }
 
 // ------------------------------------------------
 // Function Declaration
 // This function will print a greeting
 // function sayHi() {
-//     alert("Hello");
+//     console.log("Hello");
 // }
 
 // sayHi();
@@ -318,7 +318,7 @@
 //   let num1 = 2;
 //   let num2 = 8;
 //   let resultNumber = num1 + num2;
-//   alert(`Result : ${resultNumber}`);
+//   console.log(`Result : ${resultNumber}`);
 // }
 
 // showValue()
@@ -345,10 +345,10 @@
 //   else no();
 // }
 // function showOk() {
-//   alert("You agreed");
+//   console.log("You agreed");
 // }
 // function showCancel(params) {
-//   alert("You have canceled the run");
+//   console.log("You have canceled the run");
 // }
 
 // ask("do you agree ? ", showOk, showCancel);
@@ -356,7 +356,7 @@
 // ------------------------------------------------
 // workout
 // function showCount(count) {
-//   alert(count ?? "unknown");
+//   console.log(count ?? "unknown");
 // }
 
 // showCount(0); // 0
@@ -368,11 +368,11 @@
 // workout
 // function isEvenOrOdd(number) {
 //   if (number % 2 === 0) {
-//     alert("number is even");
+//     console.log("number is even");
 //   } else if (number % 2 === 1) {
-//     alert("number is odd");
+//     console.log("number is odd");
 //   } else {
-//     alert("The input items are not entered correctly");
+//     console.log("The input items are not entered correctly");
 //   }
 // }
 
@@ -381,7 +381,7 @@
 // workout
 // function averageCalculator(number1, number2, number3) {
 //   let average = (number1 + number2 + number3) / 3;
-//   alert("Average of your number is " + average);
+//   console.log("Average of your number is " + average);
 // }
 
 // averageCalculator(
@@ -393,7 +393,7 @@
 // ------------------------------------------------
 // Function Expression
 // let sayHi = function () {
-//     alert("Hello");
+//     console.log("Hello");
 // };
 
 // sayHi();
@@ -406,11 +406,11 @@
 
 // if (userAge < 18) {
 //   welcome = function () {
-//     alert("Hello");
+//     console.log("Hello");
 //   };
 // } else {
 //   welcome = function () {
-//     alert("Praise");
+//     console.log("Praise");
 //   };
 // }
 
@@ -419,14 +419,14 @@
 // ------------------------------------------------
 // Arrow functions
 // let double = (n) => n * 2;
-// alert(double(3));
+// console.log(double(3));
 
 // let sum = (a, b) => {
 //   let result = a + b;
 //   return result;
 // };
 
-// alert(sum(1, 2));
+// console.log(sum(1, 2));
 
 // ------------------------------------------------
 // workout
@@ -437,8 +437,8 @@
 
 // ask(
 //   "Do you agree?",
-//   () => alert("You agreed."),
-//   () => alert("You canceled the execution.")
+//   () => console.log("You agreed."),
+//   () => console.log("You canceled the execution.")
 // );
 
 // ------------------------------------------------
@@ -446,11 +446,11 @@
 
 // Display by index
 // let userName = "ArminAbdi";
-// alert(userName[0]);
+// console.log(userName[0]);
 
 // More efficient length counting
 // let userName = "ArminAbdi";
-// alert(userName.length);
+// console.log(userName.length);
 
 // This method enters the index we gave it and returns it
 // let text = "I love JavaScript";
@@ -504,13 +504,16 @@
 // let text = "I love JavaScript";
 // console.log(text.substring(7, 17));
 
+// console.log(eval("2**6")); //It takes a string from us, and if it is inside the code, it executes the code, and if it is a mathematical operation, it performs that operation. It can be said that it extracts the values ​​of the string.
+// console.log(eval("console.log(12)"));
+
 // ------------------------------------------------
 // workout
 // function loginForm(userName, userPassword) {
 //   if (userName.length >= 3 && userPassword.length >= 8) {
-//     alert("You are very welcome");
+//     console.log("You are very welcome");
 //   } else {
-//     alert("Username or password is not correct");
+//     console.log("Username or password is not correct");
 //   }
 // }
 
@@ -527,9 +530,9 @@
 //     userPassword.length >= 8 &&
 //     userName.toLowerCase() === "ali"
 //   ) {
-//     alert("You are very welcome");
+//     console.log("You are very welcome");
 //   } else {
-//     alert("Username or password is not correct or user name not ali");
+//     console.log("Username or password is not correct or user name not ali");
 //   }
 // }
 
@@ -713,7 +716,7 @@
 //   allPrices += Number(prompt("Enter the product price: "));
 // }
 
-// alert("All price of your basket: " + allPrices);
+// console.log("All price of your basket: " + allPrices);
 
 // ------------------------------------------------
 // workout
@@ -724,7 +727,7 @@
 //   sumNumberOfNumbers++;
 // }
 
-// alert(userNumbser / sumNumberOfNumbers);
+// console.log(userNumbser / sumNumberOfNumbers);
 
 // ------------------------------------------------
 // workout
@@ -789,7 +792,7 @@
 // console.log(sumNumberOfNumbers);
 // console.log(userNumbser);
 
-// alert(userNumbser / sumNumberOfNumbers);
+// console.log(userNumbser / sumNumberOfNumbers);
 
 // ------------------------------------------------
 // workout
@@ -797,12 +800,12 @@
 // let enterNumber2 = Number(prompt("Enter 2 number : "));
 
 // if (enterNumber1 <= 0 || enterNumber2 <= 0) {
-//   alert("numbers not 0 and -1,-2,-3,....");
+//   console.log("numbers not 0 and -1,-2,-3,....");
 // }
 
 // while (enterNumber1 > 0 && enterNumber2 > 0) {
 //   let sum = enterNumber1 ** enterNumber1;
-//   alert(sum);
+//   console.log(sum);
 //   break;
 // }
 
@@ -983,7 +986,7 @@
 //   sum += arrNmber;
 // }
 
-// alert(sum / arrNumbers.length);
+// console.log(sum / arrNumbers.length);
 
 // ------------------------------------------------
 // workout
@@ -1039,7 +1042,7 @@
 // console.log(newUser);
 
 // let key=prompt("What do you want to know about the user?","name")
-// alert(newUser[key])
+// console.log(newUser[key])
 
 // let fruit = prompt("Which fruit are you going to buy?", "apple");
 
@@ -1047,8 +1050,8 @@
 //   [fruit]: 5,
 // };
 
-// alert( bag[fruit] );
-// alert( bag.apple );
+// console.log( bag[fruit] );
+// console.log( bag.apple );
 
 // function makeUser(name, age) {
 //   return {
@@ -1062,7 +1065,7 @@
 //   prompt("Please enter your name?", "Armin"),
 //   Number(prompt("Please enter your age?", 22))
 // );
-// alert(user.name);
+// console.log(user.name);
 
 // console.log(newUser.name === undefined);//output => false
 // console.log("name" in newUser);// output => true
@@ -1081,7 +1084,7 @@
 //     "1": "USA"
 //   };
 //   for (let code in codes2) {
-//     alert(code); // 1, 41, 44, 49
+//     console.log(code); // 1, 41, 44, 49
 //   }
 
 // let codes = {
@@ -1135,6 +1138,39 @@
 // });
 // console.log(isInUsers);
 
+// let users = [
+//   { id: 1, name: "Ali", age: 21 },
+//   { id: 1, name: "Amin", age: 19 },
+//   { id: 1, name: "Amir", age: 26 },
+//   { id: 1, name: "Babak", age: 28 },
+// ];
+
+// users.find((age) => {
+//   //It returns according to the condition we gave it, and it returns the condition that is equal to it, or in other words, it finds it.
+//   if (age.name === "Amir") {
+//     console.log(age);
+//   }
+// });
+
+// ------------------------------------------------
+// workout
+// let allUsers = [
+//   { id: 1, userName: "ArminAbdi", password: "abdi2017" },
+//   { id: 1, userName: "AmirAhmadi", password: "ahmadi2017" },
+//   { id: 1, userName: "MohammadMohamdi", password: "mohamdi2017" },
+// ];
+
+// let enterUsername = prompt("enter Your username : ", "arminabdi");
+
+// let mainUserData = allUsers.find((username) => {
+//   return username.userName === enterUsername;
+// });
+
+// if (mainUserData === undefined) {
+//   console.log("There is no such username");
+// } else {
+//   console.log(`your passwrd : ${mainUserData.password}`);
+// }
 // ------------------------------------------------
 // workout
 // let Users = [
@@ -1220,7 +1256,7 @@
 //     sum += product.price;
 //   });
 //   console.log(userBasket);
-//   alert("Total Price: " + sum);
+//   console.log("Total Price: " + sum);
 // } else {
 //   console.log("not available");
 // }
@@ -1248,7 +1284,7 @@
 // let userProductName = prompt("enter your Name : ");
 // switch (userRequest) {
 //   case 1:
-//     // alert("Add");
+//     // console.log("Add");
 //     let userRequestShop;
 //     let isInShop = allProducts.some((user) => {
 //       if (user.name === userProductName) {
@@ -1269,15 +1305,15 @@
 //       return userName.name === userProductName;
 //     });
 //     if (findIndexUserRequest === -1) {
-//       alert("not item in shop");
+//       console.log("not item in shop");
 //     } else {
 //       userBasket.splice(findIndexUserRequest, 1);
-//       alert("Removed");
+//       console.log("Removed");
 //       console.log(userBasket);
 //     }
 //     break;
 //   default:
-//     alert("Please enter the correct option");
+//     console.log("Please enter the correct option");
 //     break;
 // }
 
@@ -1528,26 +1564,195 @@
 // else if (userOperator === '5') {
 //     power(num1, num2)
 // } else {
-//     alert('عملیات وارد شده معتبر نمی باشد')
+//     console.log('عملیات وارد شده معتبر نمی باشد')
 // }
 
 // function sum(num1, num2) {
 //     // return num1 + num2\
-//     alert(num1 + num2)
+//     console.log(num1 + num2)
 // }
 // function tafrig(num1, num2) {
 //     // return num1 - num2\
-//     alert(num1 - num2)
+//     console.log(num1 - num2)
 // }
 // function devide(num1, num2) {
 //     // return num1 / num2\
-//     alert(num1 / num2)
+//     console.log(num1 / num2)
 // }
 // function zarb(num1, num2) {
 //     // return num1 * num2\
-//     alert(num1 * num2)
+//     console.log(num1 * num2)
 // }
 // function power(num1, num2) {
 //     // return num1 ** num2\
-//     alert(num1 ** num2)
+//     console.log(num1 ** num2)
 // }
+
+// ------------------------------------------------
+// IIFE function
+// (function () {
+//   console.log("hello");
+// })()
+
+// ((function () {
+//     console.log("hello");
+//   })());
+
+// ------------------------------------------------
+// let number = 0;
+// setInterval(() => {
+//   console.log(number);
+//   number++;
+// }, 1000); //1000ms=1s
+
+// let number = 20;
+// let timer = setInterval(() => {
+//   console.log(number);
+//   if (number === 0) {
+//     clearInterval(timer);
+//     console.log("time Out");
+//   }
+//   number--;
+// }, 1000); //1000ms=1s
+
+// ------------------------------------------------
+// workout
+// let enterTheMinutes = Number(prompt("enter the minutes : "));
+// let enterTheseconds = Number(prompt("enter the seconds : "));
+
+// let convertMinutesToSeconds = enterTheMinutes * 60;
+
+// let SumOfSecondsAndMinutesConvertedToSeconds =
+//   convertMinutesToSeconds + enterTheseconds;
+
+// let timer = setInterval(() => {
+//   console.log(SumOfSecondsAndMinutesConvertedToSeconds);
+//   if (SumOfSecondsAndMinutesConvertedToSeconds === 0) {
+//     clearInterval(timer);
+//     console.log("time Out");
+//   }
+//   SumOfSecondsAndMinutesConvertedToSeconds--;
+// }, 1000);
+// ------------------------------------------------
+// workout
+// let enterTheMinutes = Number(prompt("enter the minutes : "));
+// let enterTheseconds = Number(prompt("enter the seconds : "));
+
+// let timer = setInterval(() => {
+//   console.log("timer : " + enterTheMinutes + " of " + enterTheseconds);
+//   if (enterTheMinutes === 0 && enterTheseconds === 0) {
+//     clearInterval(timer);
+//     console.log("time Out");
+//   }
+//   if (enterTheseconds === 0) {
+//     enterTheMinutes--;
+//     enterTheseconds += 60;
+//   }
+//   enterTheseconds--;
+// }, 1000);
+
+// ------------------------------------------------
+// falsy value or turthy value
+// let isFalsyOrTurthy1 = Boolean("armin");
+// console.log(isFalsyOrTurthy1); //true
+
+// let isFalsyOrTurthy2 = Boolean("");
+// console.log(isFalsyOrTurthy2); //false
+
+// let isFalsyOrTurthy3 = Boolean(12);
+// console.log(isFalsyOrTurthy3); //true
+
+// let isFalsyOrTurthy4 = Boolean(-12);
+// console.log(isFalsyOrTurthy4); //true
+
+// let isFalsyOrTurthy5 = Boolean(0);
+// console.log(isFalsyOrTurthy5); //false
+
+// let isFalsyOrTurthy6 = Boolean(" ");
+// console.log(isFalsyOrTurthy6); //true
+
+// let isFalsyOrTurthy7 = Boolean(undefined);
+// console.log(isFalsyOrTurthy7); //false
+
+// let isFalsyOrTurthy8 = Boolean(NaN);
+// console.log(isFalsyOrTurthy8); //false
+
+// let isFalsyOrTurthy9 = Boolean([]);
+// console.log(isFalsyOrTurthy9); //true
+
+// ------------------------------------------------
+// setTimeout(() => {
+//   console.log("Hello (:");
+// }, 2000);
+
+// setTimeout((num1,num2) => {
+//   console.log(num1+num2);
+// }, 2000,12,13);
+
+// ------------------------------------------------
+// workout
+// let isHasProfile= true
+
+// setTimeout(() => {
+//   if (!isHasProfile) {
+//     console.log("لطفا عکس پروفایل را وارد کنید ");
+//   } else {
+//     console.log("خیلی ممنون");
+//   }
+// },5000);
+
+// ------------------------------------------------
+//Flag
+// let userName = prompt("Enter the Username: ");
+
+// let users = ["ali", "armin", "amir", "babak"];
+
+// let loginFlag = false;
+
+// for (let i = 0; i < users.length; i++) {
+//   if (users[i] === userName) {
+//     loginFlag = true;
+//   }
+// }
+
+// if (loginFlag) {
+//   console.log("you are login");
+// } else {
+//   console.log("you are not login plese signin");
+// }
+
+// ------------------------------------------------
+//Hoisting - Hoist=>Uper
+// num = 12;
+
+// console.log(num);
+
+// var num;
+
+// // ------------------
+// num = 12;
+
+// console.log(num);
+
+// let num; //ReferenceError:
+
+// let num1;//SyntaxError:
+// let num1;//SyntaxError:
+
+// let num1, num2, num3;
+// num1 = 2;
+// num2 = 3;
+// num3 = 4;
+// console.log(num1 + num2 + num3);
+
+// showValue()
+// function showValue() {
+//     console.log(12+12)
+// }
+
+// showValue(); //ReferenceError:
+// let showValue = function () {
+//   console.log(12 + 12);
+// };
+
+
