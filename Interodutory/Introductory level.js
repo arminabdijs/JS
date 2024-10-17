@@ -562,14 +562,6 @@
 
 // console.log(Math.random() * 10); //It returns a random number between 0 and 1. If we want to get a specific number, we multiply it.
 
-// console.log(Math.acos(1)); //This field returns the Arkcosine of 1
-
-// console.log(Math.asin(1)); //This will return the Arksine of 1
-
-// console.log(Math.atan(1)); //This field returns the Arktangent of 1
-
-// console.log(Math.atan2(2, 6)); //This field returns the Arktangents2 of two points x and y
-
 // console.log(Math.ceil(2.1)); //This rends any number that is out of the integer, for example, it rends the number 2.1 to 3.
 
 // console.log(Math.exp(3)); //It will multiply e=2.71 by any number we give it
@@ -582,9 +574,17 @@
 
 // console.log(Math.cos(9999999999999999));//cosine returns a number between 1 and -1
 
-// console.log(Math.E); //This is Euler's number
+// console.log(Math.E); //This is Euler's number =2.718281828459045
 
-// console.log(Math.LN10); //LN10===log(10)
+// console.log(Math.LN10); //LN10===log2.718281828459045(10)
+
+// console.log(Math.acos(1)); //This field returns the Arkcosine of 1
+
+// console.log(Math.asin(1)); //This will return the Arksine of 1
+
+// console.log(Math.atan(1)); //This field returns the Arktangent of 1
+
+// console.log(Math.atan2(2, 6)); //This field returns the Arktangents2 of two points x and y
 
 // ------------------------------------------------
 // workout
@@ -754,7 +754,7 @@
 //   }
 // }
 
-// console.log("Sum Of Digits : ", sum);
+// console.log("Sum Of length : ", sum);
 
 // ------------------------------------------------
 // workout
@@ -779,13 +779,13 @@
 
 // ------------------------------------------------
 // workout
-// let enterTheNumberYouWant = Number(prompt("Enter the number you want : "));
+// let enterTheNumberYouWant = 80
 // let userNumbser = 0;
 // let sumNumberOfNumbers = 0;
 // let i = 1;
 
 // while (i <= enterTheNumberYouWant) {
-//   userNumbser += Number(prompt(`entter ${i} number : `));
+//   userNumbser += 10000
 //   sumNumberOfNumbers++;
 //   i++;
 // }
@@ -846,8 +846,8 @@
 // ]; //Multiple arrays
 // console.log(matrix[1][1]);
 
-// let arrNmber = [1, 2, 3];
-// console.log(String(arrNmber) === "1,2,3");
+// let arrNumber = [1, 2, 3];
+// console.log(String(arrNumber) === "1,2,3");
 
 // let arr = ["I", "go", "home"];
 // delete arr[1]; //The delete method is for objects and it deletes that item in the array, but the desired place is still occupied.
@@ -890,7 +890,7 @@
 // let arr = [1, 2, 3, "Armin", true];
 // console.log(arr.indexOf("Armin")); //This will return the index of that item and if the item does not exist, it will return -1
 // console.log(arr.includes(3)); //This returns true if the item exists and false if not
-// console.log(arr.find(1));
+// console.log(arr.find((i) => i === 3));
 
 // let arr = [1, 2, 3, "Armin", true];
 // let arr2 = [ "Armin", "true","ali","mohammad"];
@@ -902,6 +902,7 @@
 
 // let test = "armin";
 // console.log(test.split("")); //output => [ 'a', 'r', 'm', 'i', 'n' ]
+// console.log(test.split("").reverse().join(""));
 
 // let arr = ["armin", "ali", "mohammad", "sara"];
 // console.log(arr.splice(",", 2)); //output => [ 'armin', 'ali' ]
@@ -949,9 +950,7 @@
 // console.log(filterUserName);
 
 // let ages = [12, 19, 15, 19, 17,19];
-
 // // console.log(Array.isArray(ages)); //This specifies whether this is an array or not
-
 // console.log(ages.indexOf(19));
 // console.log(ages.lastIndexOf(19)); //This table is searched and the last item according to this is found and its index is retrieved
 // console.log(ages.lastIndexOf(19,3)); //This table is searched and the last item according to this is found and its index is retrieved
@@ -1068,11 +1067,10 @@
 // console.log(user.name);
 
 // console.log(newUser.name === undefined);//output => false
-// console.log("name" in newUser);// output => true
+// console.log("name" in newUser);//name in keys output => true
 
 // for (let key in newUser) {
-//   console.log(key);
-//   console.log(newUser[key]);
+//   console.log(key,":",newUser[key]);
 //   console.log("------------");
 // }
 
@@ -1115,7 +1113,7 @@
 //     height: 180,
 //   },
 // };
-// // console.log(user.sizes.height);
+// console.log(user.sizes.height);
 
 // let clone = structuredClone(user); //copy
 // let clone2 = Object.assign({}, user);
@@ -1184,7 +1182,7 @@
 // let userAge = Number(prompt("enter your Age"));
 // let userEmail = prompt("enter your Email");
 
-// if (userName.length < 3 || userAge.length > 10) {
+// if (userName.length < 3 || userName.length > 10) {
 //   console.log(
 //     "The name must have at least 3 characters and a maximum of 10 characters"
 //   );
@@ -1476,8 +1474,8 @@
 
 // let findName=taskList.filter((Karmand)=>{
 //     if (Karmand.name===nameKarmand) {
-//         nameKarmand=prompt("Enter the employee's task : ")
-//         Karmand.task.push(nameKarmand)
+//         newTaskKarmand=prompt("Enter the employee's task : ")
+//         Karmand.task.push(newTaskKarmand)
 //         console.log(taskList);
 //     }else{
 //         console.log("You do not have such an employee");
@@ -1589,7 +1587,7 @@
 // }
 
 // ------------------------------------------------
-// IIFE function
+// IIFE function ==> Immediately Invoked Function Expression
 // (function () {
 //   console.log("hello");
 // })()
@@ -1680,6 +1678,9 @@
 // let isFalsyOrTurthy9 = Boolean([]);
 // console.log(isFalsyOrTurthy9); //true
 
+// let isFalsyOrTurthy9 = Boolean({});
+// console.log(isFalsyOrTurthy9); //true
+
 // ------------------------------------------------
 // setTimeout(() => {
 //   console.log("Hello (:");
@@ -1691,15 +1692,15 @@
 
 // ------------------------------------------------
 // workout
-// let isHasProfile= true
+// let isHasProfile = true;
 
 // setTimeout(() => {
 //   if (!isHasProfile) {
-//     console.log("لطفا عکس پروفایل را وارد کنید ");
+//     console.log("Please enter profile picture ");
 //   } else {
-//     console.log("خیلی ممنون");
+//     console.log("Thank you very much");
 //   }
-// },5000);
+// }, 5000);
 
 // ------------------------------------------------
 //Flag
@@ -1754,5 +1755,3 @@
 // let showValue = function () {
 //   console.log(12 + 12);
 // };
-
-
