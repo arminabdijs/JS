@@ -51,6 +51,7 @@ console.log(userName[0]);
 //It goes into the text, separates it from the start index to the end index and returns it to us
 // let text = "I love JavaScript";
 // console.log(text.slice(-10, 17));
+// console.log(text.length)
 
 // This comes into the text, starting from the index to the length of the letters we want to return
 // let text = "I love JavaScript";
@@ -61,4 +62,4 @@ console.log(userName[0]);
 // console.log(text.substring(7, 17));
 
 // console.log(eval("2**6")); //It takes a string from us, and if it is inside the code, it executes the code, and if it is a mathematical operation, it performs that operation. It can be said that it extracts the values ​​of the string.
-// console.log(eval("console.log(12)"));
+// eval("console.log(12)");

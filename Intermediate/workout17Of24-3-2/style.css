@@ -1,0 +1,38 @@
+
+body {
+  background-image: url("https://roozaneh.net/wp-content/uploads/2019/03/%D8%B7%D9%84%D9%88%D8%B9-%D9%88-%D8%BA%D8%B1%D9%88%D8%A8-%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF-1.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: 2000px 1005px;
+}
+.container {
+  margin-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.box {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ input ,select{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px 10px;
+    outline: inherit;
+  }
+
+  .btn {
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px 20px;
+    background-color: rgb(255, 217, 0);
+    margin-top: 40px;
+  }
+  

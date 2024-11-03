@@ -8,5 +8,5 @@ console.log(fullName);
 
 let firstName2 = "Armin";
 let lastName2 = "Abdi";
-let fullName2 = firstName2 + "\n " + lastName2;
+let fullName2 = firstName2 + "\n" + lastName2;
 console.log(fullName2);

@@ -14,7 +14,7 @@ console.log(Math.max(1, 2, 3, 4, 56, 6, 7, 889, 9, 2, -1)); //Returns the larges
 
 console.log(Math.floor(1.9)); //This will remove the decimal part and return the correct part
 
-console.log(Math.trunc(2.6)); //This will remove the decimal part and return the correct part
+console.log(Math.trunc(2.7)); //This will remove the decimal part and return the correct part
 
 console.log(Math.round(12.7)); //This is going to change our number
 

@@ -3,10 +3,11 @@ let num1 = 12;
 let num2 = 4;
 let num3 = 3;
 
-if (num2 * num3 === num1) { //scope
+if (num2 * num3 === num1) {
+  //scope
   console.log(num2 * num3);
 } else if (num2 > num3) {
-  console.log("num2>num3");
+  console.log("num2 > num3");
 } else {
   console.log("Oops");
 }
@@ -15,3 +16,8 @@ if (num2 * num3 === num1) { //scope
 let age = 12;
 let accessAllowed = age > 18 ? true : false;
 console.log(accessAllowed); // false
+
+let result =
+  num2 * num3 === num1 ? num2 * num3 : num2 > num3 ? "num2>num3" : "Oops";
+
+console.log(result);
