@@ -19,4 +19,4 @@ console.log(isNaN(name)); //output true
 let boolean = true;
 let string = String(boolean);
 console.log(typeof string);
- 
+     
